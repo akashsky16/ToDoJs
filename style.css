@@ -1,0 +1,139 @@
+*{
+    font-family: Impact;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+#tasks{
+    display: grid;
+    row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 50px;
+    
+}
+.tripBox{
+    position: relative;
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: white;
+    color: red;
+    text-align: center;
+    box-shadow: 5px 5px 50px  5px grey;
+}
+
+hr{
+    color: gray;
+}
+
+.tripName{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.strike{
+    border-radius: 15px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    height: 25px;
+    width: 50px;
+    margin-left: 5px;
+}
+
+.actions{
+    position: absolute;
+    right: 3px;
+    bottom: 10px;
+}
+
+.subTask{
+    
+    font-size: 18px;
+}
+
+.header{
+    margin-left: 7%;
+    font-size: 32px;
+    color: white;
+    font-weight: 800;
+}
+
+.listText{
+    margin-left: 1%;
+    font-size: 32px;
+    color: whitesmoke;
+}
+
+#next{
+    text-decoration: none;
+    font-size: 32px;
+    color: whitesmoke;
+    margin-left: 60%;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+.tripBox{
+    display: block;
+}
+
+.fa-trash-alt{
+    background-color: white;
+    color: red;
+}
+
+.fa-plus-circle{
+    color: blue;
+}
+
+.edit, .delete{
+    margin-right: 5px;
+}
+
+.subTask{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+/* Media Query For Ipad */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #tasks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 15%;
+        
+    }
+
+    #next{
+        margin-left: 50%;
+    }
+}
+
+/* Media Query for Mobile */
+
+@media screen and (min-width:360px) and (max-width:640px) {
+    #tasks{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 15%;
+        
+    }
+
+    .header{
+        margin-left: 35%;
+    }
+
+    #next{
+        display: block;
+        margin-left: 28%;
+    }
+}

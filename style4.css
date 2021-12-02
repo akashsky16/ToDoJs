@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    font-family: Impact;
+}
+body{
+    background-color: black;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.fa-arrow-circle-left{
+    color: white;
+    background-color: black;
+}
+
+#back{
+    margin-left: 20px;
+    width: 33%;
+}
+
+.fa-arrow-circle-left{
+    margin-top: 30px;
+}
+
+#bText{
+    color: white;
+    font-size: 32px;
+    margin-left: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.fa-plus-circle{
+    color: blue;
+    margin-top: 30px;
+}
+
+#mainHeading{
+    color: white;
+    margin-top: 30px;
+    width: 32%;
+    text-align: center;
+    font-size: 36px;
+}
+
+#addTrip{
+    width: 32%;
+    text-align: right;
+}
+
+.tripBox{
+    height: 400px;
+    width: 250px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 5px 5px 50px  5px grey;
+}
+
+.tripName{
+    font-size: 26px;
+    color: Red;
+    margin-top: 5px;
+}
+
+.actions{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
+.subTask{
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.strike{
+    background-color: blue;
+    border-radius: 15px;
+    margin-left: 5px;
+    color: white;
+}
+
+
+
+
+@media screen and (min-width:360px) and (max-width:640px){
+    #back{
+        margin-left: 33%;
+    }
+
+    #mainHeading{
+        margin-left: 30%;
+    }
+
+    #addTrip{
+        margin-left: 23%;
+    }
+}
